@@ -18,7 +18,7 @@ source:
   sha256: 0604d2505a4a656038c39d4447b8170dd1cef90bab2e3015c40c12a6996b09c2  # [win]
 
 build:
-  number: 2
+  number: 3
   script_env:
     - ACCEPT_EULA=Y
   ignore_run_exports:
@@ -45,7 +45,7 @@ requirements:
     - openssl >=3  # [linux or osx]
   run:
     - ca-certificates
-    - krb5  # [linux]
+    - libkrb5  # [linux]
     - openssl >=3  # [linux or osx]
     - unixodbc >=2.3.1  # [linux or osx]
 
